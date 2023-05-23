@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wangku_app/_colors.dart';
 import 'package:wangku_app/home.dart';
-import 'package:wangku_app/register.dart';
+import 'package:wangku_app/login.dart';
 
-class LoginScreen extends StatelessWidget {
+class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,20 +24,48 @@ class LoginScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
                 children: [
-                  Container(
-                    margin:
-                        const EdgeInsets.symmetric(horizontal: 0, vertical: 16),
-                    child: Text(
-                      'Login Akun',
-                      style: GoogleFonts.inter(
-                        color: textColor,
-                        fontSize: 26,
-                        fontWeight: FontWeight.bold,
+                  Column(
+                    children: [
+                      Container(
+                        child: Text(
+                          'Daftar Akun',
+                          style: GoogleFonts.inter(
+                            color: textColor,
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
-                    ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 16, top: 4),
+                        child: Text(
+                          'Silahkan isi data untuk pendaftaran akun',
+                          style: GoogleFonts.inter(
+                            color: textColor,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                   Column(children: [
                     const SizedBox(height: 8),
+                    Container(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 0, vertical: 8),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            labelText: 'Nama Lengkap',
+                            labelStyle: GoogleFonts.inter(
+                              fontSize: 16,
+                            ),
+                            hintText: 'Masukkan Nama Lengkap Anda',
+                            hintStyle: GoogleFonts.inter()),
+                      ),
+                    ),
                     Container(
                       margin: const EdgeInsets.symmetric(
                           horizontal: 0, vertical: 8),
@@ -101,7 +129,7 @@ class LoginScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'LOGIN',
+                                'DAFTAR',
                                 style: GoogleFonts.inter(
                                   letterSpacing: 3,
                                   fontWeight: FontWeight.bold,
@@ -116,7 +144,7 @@ class LoginScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Belum punya akun? ',
+                        'Sudah punya akun? ',
                         style: GoogleFonts.inter(
                           color: textColor,
                         ),
@@ -126,10 +154,10 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => RegisterScreen()));
+                                  builder: (context) => LoginScreen()));
                         },
                         child: Text(
-                          'Daftar Sekarang',
+                          'Login Sekarang',
                           style: GoogleFonts.inter(
                             color: secondaryColor,
                             fontWeight: FontWeight.bold,

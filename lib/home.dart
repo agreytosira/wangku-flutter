@@ -18,7 +18,11 @@ class HomeScreen extends StatelessWidget {
               height: 35,
             )),
         body: const Center(
-          child: Text("Homepage"),
+          child: Text("Homepage",
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              )),
         ),
       ),
     );
