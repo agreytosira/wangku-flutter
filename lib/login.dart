@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
                     margin:
                         const EdgeInsets.symmetric(horizontal: 0, vertical: 16),
                     child: Text(
-                      'Login Akun',
+                      'Login Account',
                       style: GoogleFonts.inter(
                         color: textColor,
                         fontSize: 26,
@@ -50,7 +50,7 @@ class LoginScreen extends StatelessWidget {
                             labelStyle: GoogleFonts.inter(
                               fontSize: 16,
                             ),
-                            hintText: 'Masukkan Username Anda',
+                            hintText: 'Input Your Username',
                             hintStyle: GoogleFonts.inter()),
                       ),
                     ),
@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                           labelStyle: GoogleFonts.inter(
                             fontSize: 16,
                           ),
-                          hintText: 'Masukkan Password Anda',
+                          hintText: 'Input Your Password',
                           hintStyle: GoogleFonts.inter(),
                         ),
                       ),
@@ -116,7 +116,7 @@ class LoginScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Belum punya akun? ',
+                        "Don't have any account?",
                         style: GoogleFonts.inter(
                           color: textColor,
                         ),
@@ -129,7 +129,7 @@ class LoginScreen extends StatelessWidget {
                                   builder: (context) => RegisterScreen()));
                         },
                         child: Text(
-                          'Daftar Sekarang',
+                          'Register Now',
                           style: GoogleFonts.inter(
                             color: secondaryColor,
                             fontWeight: FontWeight.bold,

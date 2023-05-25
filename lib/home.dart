@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:wangku_app/_colors.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,12 +18,91 @@ class HomeScreen extends StatelessWidget {
               fit: BoxFit.contain,
               height: 35,
             )),
-        body: const Center(
-          child: Text("Homepage",
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-              )),
+        body: Container(
+          margin: EdgeInsets.all(16),
+          child: Container(
+            height: 150,
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                        decoration: BoxDecoration(
+                          color: primaryColor,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 16, vertical: 48),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.home),
+                            Text('Hello',
+                                textAlign: TextAlign.center,
+                                style: GoogleFonts.inter(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ],
+                        ))),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(
+                    child: Container(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 16, vertical: 48),
+                        decoration: BoxDecoration(
+                          color: primaryColor,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.home),
+                            Text('Hello',
+                                textAlign: TextAlign.center,
+                                style: GoogleFonts.inter(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ],
+                        ))),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(
+                    child: Container(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 16, vertical: 48),
+                        decoration: BoxDecoration(
+                          color: primaryColor,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.home),
+                            Text('Hello',
+                                textAlign: TextAlign.center,
+                                style: GoogleFonts.inter(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ],
+                        ))),
+              ],
+            ),
+          ),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          color: primaryColor,
+          child: IconButton(
+            color: textColor,
+            icon: Icon(Icons.home),
+            onPressed: () {
+              print('Button ditekan!');
+            },
+          ),
         ),
       ),
     );

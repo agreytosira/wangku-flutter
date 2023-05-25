@@ -84,12 +84,12 @@ class MainApp extends StatelessWidget {
                               style: GoogleFonts.inter(
                                 letterSpacing: 3,
                                 fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 38, 50, 56),
+                                color: textColor,
                               ),
                             ),
-                            const Icon(
+                            Icon(
                               Icons.arrow_forward,
-                              color: Color.fromARGB(255, 38, 50, 56),
+                              color: textColor,
                             )
                           ]),
                     ),

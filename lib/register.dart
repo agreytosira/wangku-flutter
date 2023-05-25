@@ -28,7 +28,7 @@ class RegisterScreen extends StatelessWidget {
                     children: [
                       Container(
                         child: Text(
-                          'Daftar Akun',
+                          'Register Account',
                           style: GoogleFonts.inter(
                             color: textColor,
                             fontSize: 26,
@@ -39,7 +39,7 @@ class RegisterScreen extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(bottom: 16, top: 4),
                         child: Text(
-                          'Silahkan isi data untuk pendaftaran akun',
+                          'Please fullfil this form to create your account',
                           style: GoogleFonts.inter(
                             color: textColor,
                             fontSize: 16,
@@ -58,11 +58,11 @@ class RegisterScreen extends StatelessWidget {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
-                            labelText: 'Nama Lengkap',
+                            labelText: 'Full Name',
                             labelStyle: GoogleFonts.inter(
                               fontSize: 16,
                             ),
-                            hintText: 'Masukkan Nama Lengkap Anda',
+                            hintText: 'Input Your Full Name',
                             hintStyle: GoogleFonts.inter()),
                       ),
                     ),
@@ -78,7 +78,7 @@ class RegisterScreen extends StatelessWidget {
                             labelStyle: GoogleFonts.inter(
                               fontSize: 16,
                             ),
-                            hintText: 'Masukkan Username Anda',
+                            hintText: 'Input Your Username',
                             hintStyle: GoogleFonts.inter()),
                       ),
                     ),
@@ -95,7 +95,25 @@ class RegisterScreen extends StatelessWidget {
                           labelStyle: GoogleFonts.inter(
                             fontSize: 16,
                           ),
-                          hintText: 'Masukkan Password Anda',
+                          hintText: 'Input Your Password',
+                          hintStyle: GoogleFonts.inter(),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 0, vertical: 8),
+                      child: TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          labelText: 'Confirm Password',
+                          labelStyle: GoogleFonts.inter(
+                            fontSize: 16,
+                          ),
+                          hintText: 'Confirm Your Password',
                           hintStyle: GoogleFonts.inter(),
                         ),
                       ),
@@ -129,7 +147,7 @@ class RegisterScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'DAFTAR',
+                                'REGISTER',
                                 style: GoogleFonts.inter(
                                   letterSpacing: 3,
                                   fontWeight: FontWeight.bold,
@@ -144,7 +162,7 @@ class RegisterScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Sudah punya akun? ',
+                        'Already have an account? ',
                         style: GoogleFonts.inter(
                           color: textColor,
                         ),
@@ -157,7 +175,7 @@ class RegisterScreen extends StatelessWidget {
                                   builder: (context) => LoginScreen()));
                         },
                         child: Text(
-                          'Login Sekarang',
+                          'Login Now',
                           style: GoogleFonts.inter(
                             color: secondaryColor,
                             fontWeight: FontWeight.bold,
