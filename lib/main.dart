@@ -34,22 +34,27 @@ class MainApp extends StatelessWidget {
                 height: 300,
                 width: 300,
               ),
-              Text(
-                'Control Your Financial Easier',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: MyColors.text,
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+              Container(
+                child: Text(
+                  'Control Your Financial Easier',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    color: MyColors.text,
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-              Padding(
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 16),
                 padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
                 child: Text(
                     'Manage your finances by recording every transaction you make. you can monitor how much your expenses and income each month.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: MyColors.text,
+                      fontFamily: 'Inter',
                       fontSize: 16,
                     )),
               ),
@@ -81,6 +86,7 @@ class MainApp extends StatelessWidget {
                             Text(
                               'GET STARTED',
                               style: TextStyle(
+                                fontFamily: 'Inter',
                                 letterSpacing: 3,
                                 fontWeight: FontWeight.bold,
                                 color: MyColors.text,
