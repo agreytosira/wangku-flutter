@@ -1,16 +1,5 @@
-# wangku_app
+# Wangku - Money Management App
 
-A new Flutter project.
+Wangku adalah sebuah aplikasi yang memudahkan pengguna untuk mencatat pemasukan dan pengeluaran uang berdasarkan kategori. Aplikasi ini juga mempermudah pengguna untuk menghitung selisih pengeluaran berdasarkan waktu tertentu. Pengguna dapat memfilter transaksi berdasarkan tanggal, mingguan, bulanan, hingga tahunan.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Wangku adalah project flutter pertama saya untuk mempelajari dasar flutter. Jadi, aplikasi ini masih banyak kekurangan.
