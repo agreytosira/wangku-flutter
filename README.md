@@ -16,4 +16,11 @@ Wangku adalah project flutter pertama saya untuk mempelajari dasar flutter. Jadi
 -   Menambahkan catatan pengeluaran harian
 -   Menyimpulkan biaya bulanan, pendapatan dan perbedaan
 
+## Daftar Screen
+
+-   Get Started Screen
+-   Login Screen
+-   Register Screen
+-   Home Screen
+
 Link Studi Kasus [Baca Disini](https://www.agreytosira.my.id/case/wangku.html)
