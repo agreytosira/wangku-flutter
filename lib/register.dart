@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:wangku_app/_colors.dart';
+import 'package:wangku_app/systems/colors.dart';
 import 'package:wangku_app/home.dart';
 import 'package:wangku_app/login.dart';
 
@@ -29,8 +28,8 @@ class RegisterScreen extends StatelessWidget {
                       Container(
                         child: Text(
                           'Register Account',
-                          style: GoogleFonts.inter(
-                            color: textColor,
+                          style: TextStyle(
+                            color: MyColors.text,
                             fontSize: 26,
                             fontWeight: FontWeight.bold,
                           ),
@@ -40,8 +39,8 @@ class RegisterScreen extends StatelessWidget {
                         margin: EdgeInsets.only(bottom: 16, top: 4),
                         child: Text(
                           'Please fullfil this form to create your account',
-                          style: GoogleFonts.inter(
-                            color: textColor,
+                          style: TextStyle(
+                            color: MyColors.text,
                             fontSize: 16,
                           ),
                         ),
@@ -59,11 +58,11 @@ class RegisterScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(15),
                             ),
                             labelText: 'Full Name',
-                            labelStyle: GoogleFonts.inter(
+                            labelStyle: TextStyle(
                               fontSize: 16,
                             ),
                             hintText: 'Input Your Full Name',
-                            hintStyle: GoogleFonts.inter()),
+                            hintStyle: TextStyle()),
                       ),
                     ),
                     Container(
@@ -75,11 +74,11 @@ class RegisterScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(15),
                             ),
                             labelText: 'Username',
-                            labelStyle: GoogleFonts.inter(
+                            labelStyle: TextStyle(
                               fontSize: 16,
                             ),
                             hintText: 'Input Your Username',
-                            hintStyle: GoogleFonts.inter()),
+                            hintStyle: TextStyle()),
                       ),
                     ),
                     Container(
@@ -92,11 +91,11 @@ class RegisterScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           labelText: 'Password',
-                          labelStyle: GoogleFonts.inter(
+                          labelStyle: TextStyle(
                             fontSize: 16,
                           ),
                           hintText: 'Input Your Password',
-                          hintStyle: GoogleFonts.inter(),
+                          hintStyle: TextStyle(),
                         ),
                       ),
                     ),
@@ -110,11 +109,11 @@ class RegisterScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           labelText: 'Confirm Password',
-                          labelStyle: GoogleFonts.inter(
+                          labelStyle: TextStyle(
                             fontSize: 16,
                           ),
                           hintText: 'Confirm Your Password',
-                          hintStyle: GoogleFonts.inter(),
+                          hintStyle: TextStyle(),
                         ),
                       ),
                     ),
@@ -148,7 +147,7 @@ class RegisterScreen extends StatelessWidget {
                             children: [
                               Text(
                                 'REGISTER',
-                                style: GoogleFonts.inter(
+                                style: TextStyle(
                                   letterSpacing: 3,
                                   fontWeight: FontWeight.bold,
                                   color: Color.fromARGB(255, 38, 50, 56),
@@ -163,8 +162,8 @@ class RegisterScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Already have an account? ',
-                        style: GoogleFonts.inter(
-                          color: textColor,
+                        style: TextStyle(
+                          color: MyColors.text,
                         ),
                       ),
                       TextButton(
@@ -176,8 +175,8 @@ class RegisterScreen extends StatelessWidget {
                         },
                         child: Text(
                           'Login Now',
-                          style: GoogleFonts.inter(
-                            color: secondaryColor,
+                          style: TextStyle(
+                            color: MyColors.secondary,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

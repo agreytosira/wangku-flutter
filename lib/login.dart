@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:wangku_app/_colors.dart';
+import 'package:wangku_app/systems/colors.dart';
 import 'package:wangku_app/home.dart';
 import 'package:wangku_app/register.dart';
 
@@ -29,8 +28,8 @@ class LoginScreen extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: 0, vertical: 16),
                     child: Text(
                       'Login Account',
-                      style: GoogleFonts.inter(
-                        color: textColor,
+                      style: TextStyle(
+                        color: MyColors.text,
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                       ),
@@ -47,11 +46,11 @@ class LoginScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(15),
                             ),
                             labelText: 'Username',
-                            labelStyle: GoogleFonts.inter(
+                            labelStyle: TextStyle(
                               fontSize: 16,
                             ),
                             hintText: 'Input Your Username',
-                            hintStyle: GoogleFonts.inter()),
+                            hintStyle: TextStyle()),
                       ),
                     ),
                     Container(
@@ -64,11 +63,11 @@ class LoginScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           labelText: 'Password',
-                          labelStyle: GoogleFonts.inter(
+                          labelStyle: TextStyle(
                             fontSize: 16,
                           ),
                           hintText: 'Input Your Password',
-                          hintStyle: GoogleFonts.inter(),
+                          hintStyle: TextStyle(),
                         ),
                       ),
                     ),
@@ -102,10 +101,10 @@ class LoginScreen extends StatelessWidget {
                             children: [
                               Text(
                                 'LOGIN',
-                                style: GoogleFonts.inter(
+                                style: TextStyle(
                                   letterSpacing: 3,
                                   fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 38, 50, 56),
+                                  color: MyColors.text,
                                 ),
                               ),
                             ]),
@@ -117,8 +116,8 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Don't have any account?",
-                        style: GoogleFonts.inter(
-                          color: textColor,
+                        style: TextStyle(
+                          color: MyColors.text,
                         ),
                       ),
                       TextButton(
@@ -130,8 +129,8 @@ class LoginScreen extends StatelessWidget {
                         },
                         child: Text(
                           'Register Now',
-                          style: GoogleFonts.inter(
-                            color: secondaryColor,
+                          style: TextStyle(
+                            color: MyColors.secondary,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

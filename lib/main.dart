@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:wangku_app/_colors.dart';
+import 'package:wangku_app/systems/colors.dart';
 import 'package:wangku_app/login.dart';
 
 void main() {
@@ -38,8 +37,8 @@ class MainApp extends StatelessWidget {
               Text(
                 'Control Your Financial Easier',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.inter(
-                  color: textColor,
+                style: TextStyle(
+                  color: MyColors.text,
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                 ),
@@ -49,8 +48,8 @@ class MainApp extends StatelessWidget {
                 child: Text(
                     'Manage your finances by recording every transaction you make. you can monitor how much your expenses and income each month.',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      color: textColor,
+                    style: TextStyle(
+                      color: MyColors.text,
                       fontSize: 16,
                     )),
               ),
@@ -68,7 +67,7 @@ class MainApp extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       side: BorderSide(color: Colors.black, width: 1),
-                      backgroundColor: primaryColor,
+                      backgroundColor: MyColors.primary,
                       fixedSize: Size(double.infinity, 60),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
@@ -81,15 +80,15 @@ class MainApp extends StatelessWidget {
                           children: [
                             Text(
                               'GET STARTED',
-                              style: GoogleFonts.inter(
+                              style: TextStyle(
                                 letterSpacing: 3,
                                 fontWeight: FontWeight.bold,
-                                color: textColor,
+                                color: MyColors.text,
                               ),
                             ),
                             Icon(
                               Icons.arrow_forward,
-                              color: textColor,
+                              color: MyColors.text,
                             )
                           ]),
                     ),
